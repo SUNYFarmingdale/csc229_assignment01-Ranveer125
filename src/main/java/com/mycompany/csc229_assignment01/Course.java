@@ -44,6 +44,14 @@ public Course() {
  
 }
 
+public Course(int ID, String Name, String Code) {
+    
+       this.ID = ID;
+       this.Name = Name;
+       this.Code = Code; 
+    // This is the Overloaded Constructor 
+}
+    
     public void setID(int ID) {
         this.ID = ID;
     }
@@ -67,6 +75,6 @@ public Course() {
     public String getCode() {
         return Code;
     }
-
-
 }
+
+
