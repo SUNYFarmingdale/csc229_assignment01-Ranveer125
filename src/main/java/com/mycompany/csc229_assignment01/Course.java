@@ -42,7 +42,7 @@ public Course() {
    
    // This is the Default Constructor
  
-}
+}   
 
 public Course(int ID, String Name, String Code) {
     
@@ -52,7 +52,7 @@ public Course(int ID, String Name, String Code) {
     // This is the Overloaded Constructor 
 }
     
-    public void setID(int ID) {
+public void setID(int ID) {
         this.ID = ID;
     }
 
