@@ -38,7 +38,7 @@ public class Course {
     private String Name;
     private String Code;
   
-public Course() {
+public Course(String id, String name) {
    
    // This is the Default Constructor
  
@@ -51,7 +51,11 @@ public Course(int ID, String Name, String Code) {
        this.Code = Code; 
     // This is the Overloaded Constructor 
 }
-    
+
+/**
+ * 
+ * @param ID ID to set 
+ */
 public void setID(int ID) {
         this.ID = ID;
     }
@@ -64,6 +68,10 @@ public void setID(int ID) {
         this.Code = Code;
     }
 
+ /**
+  * 
+  * @return current ID
+  */           
     public int getID() {
         return ID;
     }
