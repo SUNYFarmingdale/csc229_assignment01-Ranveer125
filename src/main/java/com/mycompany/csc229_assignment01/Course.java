@@ -38,51 +38,81 @@ public class Course {
     private String Name;
     private String Code;
   
-public Course(String id, String name) {
-   
-   // This is the Default Constructor
+   public Course() {
+        this.ID = 0;
+        this.Name = "";
+        this.Code = "";
+      
+       // This is the Default Constructor
  
-}   
+    }   
 
-public Course(int ID, String Name, String Code) {
+    public Course(int ID, String Name, String Code) {
     
        this.ID = ID;
        this.Name = Name;
        this.Code = Code; 
-    // This is the Overloaded Constructor 
-}
+       
+       // This is the Overloaded Constructor for the Member Variables
+    }
 
-/**
- * 
- * @param ID ID to set 
- */
-public void setID(int ID) {
+    /**
+    * 
+    * @param ID ID to set 
+    */
+    public void setID(int ID) {
         this.ID = ID;
     }
 
+    /**
+     * 
+     * @param Name Name to set
+     */
     public void setName(String Name) {
         this.Name = Name;
     }
 
+    /**
+     * 
+     * @param Code Code to set
+     */
     public void setCode(String Code) {
         this.Code = Code;
     }
 
- /**
-  * 
-  * @return current ID
-  */           
+    /**
+    * 
+    * @return Current ID
+    */           
     public int getID() {
         return ID;
     }
 
+    /**
+     * 
+     * @return Current Name
+     */
     public String getName() {
         return Name;
     }
 
+    /**
+     * 
+     * @return Current Code
+     */
     public String getCode() {
-        return Code;
+        return Code;        
+    }
+
+    void setID(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 }
+
+
+
+
+
+
 
 
